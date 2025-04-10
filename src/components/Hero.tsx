@@ -8,13 +8,13 @@ const Hero = () => {
     <div className="relative py-24 sm:py-32 lg:pt-36 lg:pb-32 overflow-hidden">
       {/* Background gradient blobs */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-purple-500/20 blur-3xl"></div>
-        <div className="absolute top-40 -left-40 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"></div>
+        <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl"></div>
+        <div className="absolute top-40 -left-40 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl"></div>
       </div>
       
       <div className="mx-auto max-w-4xl text-center">
         <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400 font-extrabold">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-200 font-extrabold">
             Supercharge
           </span>{" "}
           your business with AI driven automation
