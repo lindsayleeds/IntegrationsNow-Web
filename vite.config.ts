@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/integrationsnow-alchemy-web/',
+  base: mode === 'production' ? '/integrationsnow-alchemy-web/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
