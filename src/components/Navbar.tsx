@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className="py-6">
       <nav className="flex items-center justify-between">
         <div className="flex-shrink-0">
-          <Link to="/" className="text-2xl font-bold tracking-tighter text-primary">
+          <Link to="/" className="text-3xl font-bold tracking-tighter text-primary">
             IntegrationsNow
           </Link>
         </div>
