@@ -39,7 +39,7 @@ If you prefer to run commands manually:
 
 3. **Start with PM2**:
    ```bash
-   pm2 start ecosystem.config.js --env production
+   pm2 start ecosystem.config.cjs --env production
    ```
 
 4. **Save PM2 configuration**:
@@ -60,8 +60,8 @@ If you prefer to run commands manually:
 ## Configuration
 
 The application is configured to run on **port 4002** by default. You can modify this in:
-- `ecosystem.config.js` - PM2 configuration
-- `server.js` - Express server configuration
+- `ecosystem.config.cjs` - PM2 configuration
+- `server.cjs` - Express server configuration
 - `vite.config.ts` - Development server configuration
 
 ## Logs

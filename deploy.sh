@@ -19,7 +19,7 @@ pm2 stop integrationsnow-web 2>/dev/null || true
 
 # Start the application with PM2
 echo "▶️  Starting application with PM2..."
-pm2 start ecosystem.config.js --env production
+pm2 start ecosystem.config.cjs --env production
 
 # Save PM2 configuration
 echo "💾 Saving PM2 configuration..."
