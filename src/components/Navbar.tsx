@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -34,9 +33,11 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:block">
-          <Button className="px-4 py-2" size="lg">
-            Contact Us
-          </Button>
+          <Link to="/contact">
+            <Button className="px-4 py-2" size="lg">
+              Contact Us
+            </Button>
+          </Link>
         </div>
         
         {/* Mobile menu button */}
@@ -80,9 +81,11 @@ const Navbar = () => {
             Our Mission
           </Link>
           <div className="pt-4">
-            <Button className="w-full" onClick={() => setIsMenuOpen(false)}>
-              Contact Us
-            </Button>
+            <Link to="/contact" className="block">
+              <Button className="w-full" onClick={() => setIsMenuOpen(false)}>
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       )}

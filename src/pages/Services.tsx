@@ -1,8 +1,8 @@
-
 import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Bot, BarChart, Code, FileText, Database, Users, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -59,10 +59,12 @@ const Services = () => {
                 <h3 className="text-2xl font-bold mb-2">Ready to transform your business?</h3>
                 <p className="text-muted-foreground">Get in touch with our team to discuss your specific needs.</p>
               </div>
-              <Button className="px-6 py-5 text-lg group" size="lg">
-                <span>Contact Us</span>
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <Link to="/contact">
+                <Button className="px-6 py-5 text-lg group" size="lg">
+                  <span>Contact Us</span>
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

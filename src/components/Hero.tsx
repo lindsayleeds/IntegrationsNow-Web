@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,10 +24,12 @@ const Hero = () => {
           to automate repetitive tasks, extract insights from data, and drive business growth.
         </p>
         <div className="mt-10 flex items-center justify-center gap-6">
-          <Button className="px-8 py-6 text-lg group" size="lg">
-            <span>Contact Us</span>
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <Link to="/contact">
+            <Button className="px-8 py-6 text-lg group" size="lg">
+              <span>Contact Us</span>
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
           <Button variant="outline" className="px-8 py-6 text-lg" size="lg">
             Learn More
           </Button>

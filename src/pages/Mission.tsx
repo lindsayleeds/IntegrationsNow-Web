@@ -1,7 +1,7 @@
-
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Mission = () => {
   return (
@@ -90,10 +90,12 @@ const Mission = () => {
             <p className="text-xl text-muted-foreground mb-8 mx-auto max-w-2xl">
               Join the businesses that are already experiencing the benefits of AI-driven automation and integration.
             </p>
-            <Button className="px-8 py-6 text-lg group" size="lg">
-              <span>Contact Us Today</span>
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <Link to="/contact">
+              <Button className="px-8 py-6 text-lg group" size="lg">
+                <span>Contact Us Today</span>
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
           </div>
         </div>
         
